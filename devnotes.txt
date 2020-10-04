@@ -1,0 +1,24 @@
+Bank:
+	Code (Primary Key)
+	Name
+	Addr
+Bank Branch: (Weak)
+	Addr
+	Branch_no (FOREIGN KEY REFERENCES BANK(Code))
+Loan:
+	Loan_no (Primary Key)
+	Amount
+	Type
+Customer:
+	Ssn (Primary Key)
+	Name
+	Addr
+	Phone (Unique)
+Account:
+	Acct_no (Primary Key)
+	Balance
+	Type
+
+- Phone is unique because banks won't allow more than one loan at a time
+- I'm putting Branch_no as the foreign key beacuse the code for banks will be 101 or 102
+	- If the branch number is the same as the branch, that means it is a branch for that bank

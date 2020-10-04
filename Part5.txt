@@ -1,0 +1,14 @@
+A) Retrieve all of the names of all freshman (class=1) 
+students majoring in 'CS'.
+
+B) Retrieve the names of all courses taught by Professor 
+Anderson (without duplicate results).
+
+C) For each section taught by Anderson, retrieve the course 
+number, semester, year and names of students who took the section 
+(order the results by year[descending] and then by course number[ascending]).
+
+D) Retrieve the name and transcript of each sophomore (class=2) 
+student majoring in 'CS'.   A transcript includes course name, 
+course number, credit hours, semester, year, and grade for each 
+course completed by the student.

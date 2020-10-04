@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sample HTML Form</title>
+    <style type="text/css">
+        body {
+            font-family: monospace;
+            font-size: 16pt;
+            background-color: lightskyblue;
+        }
+
+        div[id="head"] {
+            font-weight: bold;
+            margin-bottom: 1cm;
+            text-align: center;
+        }
+
+        input {
+            font-size: 16pt;
+            background-color: white;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="head">Submit your Service Request</div>
+    <form method="post" action="simple.php">
+        <table>
+            <tr>
+                <td>Name: </td>
+                <td><input type="text" name="name" value="Joe Schmoe" /></td>
+            </tr>
+            <tr>
+                <td>Email: </td>
+                <td><input type="email" name="email" value="joe@schmoe.com" /></td>
+            </tr>
+            <tr>
+                <td>Date: </td>
+                <td><input type="date" name="issuedate" /></td>
+            </tr>
+            <tr>
+                <td>Number of Users Affected: </td>
+                <td><input type="number" name="numusers" /></td>
+            </tr>
+            <tr>
+                <td>Request Type:</td>
+                <td><input type="radio" name="request" value="broken" checked="checked" />
+                    Broken Service
+                    <input type="radio" name="request" value="newfeature" /> New Feature
+                </td>
+            </tr>
+            <tr>
+                <td>Department: </td>
+                <td><select name="department">
+                        <option value="research">Research</option>
+                        <option value="sales">Sales</option>
+                        <option value="marketing">Marketing</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Description: </td>
+                <td><textarea name="description" cols="20" rows="10">Describe the issue in detail</textarea></td>
+            </tr>
+            <tr>
+                <td>Priority Action?</td>
+                <td><input type="checkbox" name="priority" value="check" />Yes, this is a priority</td>
+            </tr>
+            <tr>
+                <td>Submit Button:</td>
+                <td><input type="submit" value="Click to submit your service request" /></td>
+            </tr>
+            <tr>
+                <td>Reset Button: </td>
+                <td><input type="reset" value="Clock to reset the service request form" /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
